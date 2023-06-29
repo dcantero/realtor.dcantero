@@ -1,0 +1,59 @@
+<div id="cover-image">
+  <!-- nav bar -->
+  <nav>
+    <div class="nav-wrapper">
+      <!-- 1st section -->
+
+      <div class="section-1">
+        <ul class="nav-links navShow">
+          <li>
+            <a class="hbutton" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="hbutton" href="resources.html">Listings</a>
+          </li>
+          <li>
+            <a class="hbutton" href="testimonials.html">Resources</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 2nd section -->
+      <div class="section-2">
+        <a href="index.html" id="logo">
+          <div class="logo-div">
+            <div class="box-top">
+              <h2 class="logo-top">Daniel Cantero</h2>
+            </div>
+            <div class="box-bottom">
+              <h2 class="logo-bottom">Realtor | South Jersey</h2>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="menu-icon">=</div>
+      <!-- 3rd section -->
+      <div class="section-3">
+        <ul class="nav-links navShow">
+          <li>
+            <a class="hbutton" href="index.html">Testimonials</a>
+          </li>
+          <li>
+            <a class="hbutton" href="resources.html">Partners</a>
+          </li>
+          <li>
+            <a class="hbutton" href="testimonials.html">Other</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End nav bar -->
+  <script>
+    var mIcon = document.querySelector(".menu-icon");
+    var nLinks = document.querySelector(".nav-links");
+
+    mIcon.addEventListener("click", () => {
+      nLinks.classList.toggle("navShow");
+    });
+  </script>
+</div>

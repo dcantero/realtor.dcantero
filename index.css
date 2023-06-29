@@ -1,0 +1,136 @@
+.tagline {
+  display: flex;
+  justify-content: center;
+  font-size: 40pt;
+  text-transform: capitalize;
+  margin: 150px 0px;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: center;
+}
+
+.cta-container button {
+  background-color: var(--eerie-black-2);
+  padding: 10px 12px;
+  border: none;
+  margin: 15px;
+  border-radius: 5px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+.cta-container a {
+  text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+button {
+  text-decoration: none;
+}
+
+.separator {
+  display: flex;
+  width: 150px;
+  height: 2px;
+  background: var(--jet);
+  margin: 20px auto;
+}
+
+.resource-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.separator-2 {
+  width: 40px;
+  height: 2px;
+  background-color: var(--jet);
+  margin: 8px 0px;
+}
+
+.resource-block {
+  display: flex;
+  height: 200px;
+  width: 500px;
+  background-color: var(--eerie-black-2);
+  margin: 50px;
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  padding-right: 15px;
+}
+.glyph-container {
+  margin: auto 10px;
+  padding: 0px 15px;
+}
+
+.glyphs {
+  width: 70px;
+}
+
+.content-container {
+  margin: auto 10px;
+}
+
+.resource-buttons {
+  margin: 15px 0px 0px 0px;
+}
+
+.download-btn {
+  background-color: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+  margin-right: 15px;
+  padding: 8px 12px;
+}
+
+.other-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.resource-buttons a {
+  text-decoration: none;
+}
+
+.about-me div {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px;
+}
+.about-me h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.separator-3 {
+  width: 150px;
+  height: 2px;
+  background: var(--jet);
+  margin: 20px auto;
+}
+
+.about-me p {
+  width: 600px;
+}
+
+.headshot {
+  margin: 15px 0px;
+  color: hsl(228, 100%, 70%);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40px;
+  width: 80px;
+}
+
+.contact-btn span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
