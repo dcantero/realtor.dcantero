@@ -99,7 +99,7 @@ button {
   text-decoration: none;
 }
 
-.about-me div {
+.about-me .about-me-text {
   display: flex;
   justify-content: center;
   margin: 15px 0px;
