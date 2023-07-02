@@ -4,10 +4,21 @@ var siteContent = document.querySelector("#site-content");
 
 mobileMenuIcon.addEventListener("click", function () {
 
-    mobileMenu.classList.toggle("mobile-menu-list-active");
-    siteContent.classList.toggle("site-content-active");
-    
+    if(!mobileMenu.classList.contains("mobile-menu-list-active")){
+    mobileMenu.classList.add("mobile-menu-list-active");
+    siteContent.classList.add("site-content-active");
+    mobileMenu.classList.remove("mobile-menu-list-inactive");
+        siteContent.classList.remove("site-content-inactive");
+    } else{
+      
+        mobileMenu.classList.add("mobile-menu-list-inactive");
+        siteContent.classList.add("site-content-inactive");
+        mobileMenu.classList.remove("mobile-menu-list-active");
+        siteContent.classList.remove("site-content-active");
+       
+    }
 });
+
 
 
 // if(mobileMenu.style.display == "block"){
