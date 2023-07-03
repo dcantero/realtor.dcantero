@@ -75,6 +75,12 @@ body {
   background: var(--smoky-black);
 }
 
+p {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 /* nav start */
 .main-nav-container {
   display: flex;
