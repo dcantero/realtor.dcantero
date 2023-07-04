@@ -1,0 +1,38 @@
+.container {
+  margin: 160px 0px 0px 80px;
+}
+
+.fourohfour {
+  font-size: 150px;
+}
+
+button {
+  background-color: var(--eerie-black-2);
+  padding: 10px 12px;
+  border: none;
+  margin: 15px 0px 15px 0px;
+  border-radius: 5px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+a {
+  transition: 0.3s;
+}
+a:hover {
+  color: rgb(133, 132, 132);
+}
+
+.container a {
+  text-decoration: none;
+  font-size: 15px;
+}
+.container p {
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
