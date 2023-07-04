@@ -76,7 +76,7 @@ function initMap() {
       elementType: "geometry.fill",
       stylers: [
         {
-          color: "#121212",
+          color: "#171717",
         },
       ],
     },
@@ -132,7 +132,7 @@ function initMap() {
       featureType: "landscape.natural.landcover",
       stylers: [
         {
-          color: "#141514",
+          color: "#121212",
         },
       ],
     },
