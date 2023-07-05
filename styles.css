@@ -249,10 +249,8 @@ transition: 0.3s;
 }
 
 .fa-brands {
-  margin-top: 20px;
-  margin-right: 25px;
   color: rgb(117, 131, 162);
-  font-size: 20px;
+  font-size: 22px;
 }
 
 @media (max-width: 768px) {
@@ -417,4 +415,9 @@ transition: 0.3s;
 .gmnoprint .gm-style-mtc {
   background-color: #121212; /* Set the desired background color for the map controls */
   color: #ffffff; /* Set the desired text color for the map controls */
+}
+
+.socials a {
+  display: inline-block;
+  margin: 20px;
 }
