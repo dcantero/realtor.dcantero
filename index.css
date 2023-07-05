@@ -6,28 +6,6 @@
   margin: 150px 0px;
 }
 
-.cta-container {
-  display: flex;
-  justify-content: center;
-}
-
-.cta-container button {
-  background-color: var(--eerie-black-2);
-  padding: 10px 12px;
-  border: none;
-  margin: 15px;
-  border-radius: 5px;
-  border: 1px solid var(--jet);
-  box-shadow: var(--shadow-1);
-}
-
-.cta-container a {
-  text-decoration: none;
-  font-size: 15px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
 button {
   text-decoration: none;
 }
