@@ -1,0 +1,4 @@
+Add hover effects to map, in index, all nav links and footer links and buttons like "Add Contact"
+
+Fix index for mobile
+fix footer for mobile

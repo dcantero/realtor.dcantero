@@ -1,0 +1,47 @@
+.heading {
+  margin: 40px auto 40px auto;
+}
+#desc,
+#title {
+  display: flex;
+  justify-content: center;
+}
+
+#desc {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.resource-main-container {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.resources {
+  display: flex;
+  margin: 30px;
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: var(--eerie-black-2);
+}
+
+.separator {
+  width: 150px;
+  height: 2px;
+  background-color: var(--jet);
+}
+
+.left-side {
+  width: 50%;
+}
+.left-side img {
+  height: 300px;
+  width: 200px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 80% 0;
+}
+.right-side {
+  width: 50%;
+}
