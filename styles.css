@@ -167,13 +167,17 @@ li {
   margin: auto;
   color: hsl(228, 100%, 70%);
 }
-
+nav a {
+  transition: 0.3s;
+}
+nav a:hover {
+  color: rgb(135, 135, 135);
+}
 /* nav end  */
 
 /* footer */
 footer {
   background-color: var(--neu-10);
-  margin-bottom: 20px;
 }
 
 .footer-main {
@@ -241,8 +245,12 @@ transition: 0.3s;
 .lists li a {
   text-decoration: none;
   color: rgb(125, 142, 179);
+  transition: 0.3s;
 }
 
+.lists li a:hover {
+  color: hsl(228, 100%, 70%);
+}
 .list-link {
   margin: 15px 0px;
   color: rgb(110, 125, 156);
@@ -251,6 +259,11 @@ transition: 0.3s;
 .fa-brands {
   color: rgb(117, 131, 162);
   font-size: 22px;
+  transition: 0.3s;
+}
+
+.fa-brands:hover {
+  color: hsl(228, 100%, 70%);
 }
 
 @media (max-width: 768px) {
@@ -434,19 +447,16 @@ transition: 0.3s;
   justify-content: center;
 }
 
-.cta-container button {
+.cta {
   background-color: var(--eerie-black-2);
   padding: 10px 12px;
   border: none;
-  margin: 15px;
   border-radius: 5px;
   border: 1px solid var(--jet);
   box-shadow: var(--shadow-1);
-}
-
-.cta-container a {
   text-decoration: none;
   font-size: 15px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  margin: auto 20px;
 }

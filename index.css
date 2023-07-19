@@ -1,11 +1,70 @@
 .tagline {
   display: flex;
   justify-content: center;
-  font-size: 40pt;
+  font-size: 35pt;
+  font-weight: 500;
   text-transform: capitalize;
-  margin: 150px 0px;
+  width: 85%;
+  margin: 0px auto;
 }
 
+.subtext {
+  display: flex;
+  justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 17pt;
+  text-transform: uppercase;
+
+  margin: 10px;
+}
+
+.top-text {
+  margin-top: 100px;
+}
+
+.bottom-text {
+  margin: 10px auto;
+  width: max-content;
+  margin-bottom: 60px;
+  animation: delay-typewriter 1s ease forwards;
+}
+
+.bottom-text::before,
+.bottom-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-text::before {
+  background: #121212;
+  animation: typewriter 2s steps(10) 1s forwards;
+}
+
+.bottom-text::after {
+  width: 2px;
+  background: white;
+  animation: typewriter 2s steps(10) 1s forwards, blink 650ms steps(10) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
 button {
   text-decoration: none;
 }
@@ -20,8 +79,11 @@ button {
 
 .resource-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.resource-title {
+  text-transform: capitalize;
 }
 
 .separator-2 {
@@ -55,8 +117,11 @@ button {
   margin: auto 10px;
 }
 
+.resource-desc {
+  color: rgb(133, 130, 130);
+}
 .resource-buttons {
-  margin: 15px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 .download-btn {
@@ -73,18 +138,27 @@ button {
   border: none;
 }
 
-.resource-buttons a {
+.cta-resource {
+  background-color: var(--eerie-black-2);
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
   text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .about-me {
-  margin: 40px auto;
+  margin: 40px auto 0px auto;
 }
 
 .about-me .about-me-text {
   display: flex;
   justify-content: center;
-  margin: 15px 0px;
+  margin: 15px 0px 0px 0px;
 }
 .about-me h3 {
   font-size: 25px;
@@ -124,10 +198,12 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 500px;
   width: 80%;
   margin: 0 auto;
   border-radius: 30px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
 }
 
 .gmnoprint:last-child {
@@ -181,4 +257,61 @@ button {
   height: 2px;
   background: var(--jet);
   margin: 0px auto 25px auto;
+}
+
+@media (max-width: 768px) {
+  .subtext {
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    color: gray;
+    text-transform: uppercase;
+  }
+  .top-text {
+    margin-top: 40px;
+  }
+  .bottom-text {
+    margin-top: 20px;
+  }
+
+  .resource-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resource-block {
+    width: 85%;
+    margin: 20px auto;
+    height: fit-content;
+    padding: 8px;
+  }
+  .glyph-container {
+    margin: auto 0px;
+  }
+  .glyphs {
+    width: 50px;
+  }
+
+  .content-container {
+    padding: 15px 10px 15px 10px;
+    margin: 0px;
+  }
+
+  #map {
+    width: 85%;
+  }
+  .service-area-container h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+.contact-cta {
+  margin-bottom: 50px;
 }

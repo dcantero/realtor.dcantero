@@ -19,8 +19,6 @@ mobileMenuIcon.addEventListener("click", function () {
     }
 });
 
-
-
 // if(mobileMenu.style.display == "block"){
     //     mobileMenu.style.display = "none";
     // } else{
