@@ -1,0 +1,83 @@
+.ud-content {
+  margin: 400px auto auto auto;
+}
+
+.ud-title {
+  display: flex;
+  justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 10px auto;
+  width: max-content;
+  animation: delay-typewriter 1s ease forwards;
+}
+
+.ud-title::before,
+.ud-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.ud-title::before {
+  background: #121212;
+  animation: typewriter 2s steps(10) 1s forwards;
+}
+
+.ud-title::after {
+  width: 2px;
+  background: white;
+  animation: typewriter 2s steps(10) 1s forwards, blink 650ms steps(10) infinite;
+}
+
+.ud-content h3 {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.home-btn {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+
+.ud-content h3 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .ud-content {
+    margin: 40px auto auto 40px;
+  }
+}
+
+.cta {
+  transition: 0.3s ease;
+  margin-left: 0px;
+}
+
+.cta:hover {
+  color: gray;
+}

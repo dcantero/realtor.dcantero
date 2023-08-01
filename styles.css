@@ -459,4 +459,9 @@ transition: 0.3s;
   letter-spacing: 3px;
   text-transform: uppercase;
   margin: auto 20px;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  color: grey;
 }

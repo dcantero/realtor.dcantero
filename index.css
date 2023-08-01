@@ -149,6 +149,11 @@ button {
   font-size: 14px;
   letter-spacing: 3px;
   text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.cta-resource:hover {
+  color: grey;
 }
 
 .about-me {
@@ -314,4 +319,12 @@ button {
 
 .contact-cta {
   margin-bottom: 50px;
+}
+
+.contact-cta span {
+  transition: 0.3s ease;
+}
+
+.contact-cta span:hover {
+  color: grey;
 }
