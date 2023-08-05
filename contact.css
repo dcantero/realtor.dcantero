@@ -1,0 +1,77 @@
+.title h1,
+.title h3 {
+  text-align: center;
+}
+.contact-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact-section {
+  margin: 40px;
+  width: 230px;
+  height: 270px;
+  background-color: var(--eerie-black-2);
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+}
+.fa-icon {
+  color: rgb(117, 131, 162);
+  font-size: 30px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  background-color: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+.fa-icon:hover {
+  color: hsl(228, 100%, 70%);
+}
+
+.contact-info {
+  display: flex;
+  text-align: center;
+}
+.contact-info-link {
+  margin: auto;
+  text-align: center;
+}
+
+.contact-info p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.contact-info a {
+  text-align: center;
+}
+
+.testp {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.info-link {
+  margin-bottom: 25px;
+  color: gray;
+}
+
+.ctas {
+  text-align: center;
+}
+
+.top-cta {
+  margin: 40px 0px;
+}
