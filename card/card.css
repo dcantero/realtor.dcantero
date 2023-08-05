@@ -10,18 +10,20 @@
 }
 
 body {
-  background-color: rgb(25, 28, 40);
+  background-color: #121212;
 }
 
 .card {
   box-shadow: 5px;
-  background-color: #10121b;
+  background-color: #161825;
   border-radius: 25px;
   width: 330px;
   height: 500px;
   margin: 80px auto;
   padding: 20px;
   position: relative;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
 }
 
 .top-box {
