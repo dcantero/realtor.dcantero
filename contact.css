@@ -1,6 +1,11 @@
 .title h1,
-.title h3 {
+.title h2 {
   text-align: center;
+}
+
+.title h2 {
+  margin: 10px auto;
+  font-weight: 100;
 }
 .contact-container {
   display: flex;
@@ -74,4 +79,24 @@
 
 .top-cta {
   margin: 40px 0px;
+}
+
+.contact-link {
+  transition: 0.3s ease;
+}
+
+.contact-link:hover {
+  color: gray;
+}
+
+.add-contact-cta {
+  margin-bottom: 20px;
+}
+
+.add-contact-cta span {
+  transition: 0.3s ease;
+}
+
+.add-contact-cta span:hover {
+  color: grey;
 }

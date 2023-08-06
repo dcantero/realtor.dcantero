@@ -38,7 +38,7 @@
   animation: typewriter 2s steps(10) 1s forwards, blink 650ms steps(10) infinite;
 }
 
-.ud-content h3 {
+.ud-content h2 {
   display: flex;
   justify-content: center;
   font-weight: 100;
@@ -80,4 +80,27 @@
 
 .cta:hover {
   color: gray;
+}
+
+@media (max-width: 778px) {
+  .ud-title {
+    font-size: 30px;
+  }
+  .ud-content h2 {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .cta {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
 }
