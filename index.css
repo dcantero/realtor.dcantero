@@ -266,11 +266,13 @@ button {
 
 @media (max-width: 768px) {
   .subtext {
+    font-size: 15px;
     text-align: center;
   }
   .tagline {
     text-align: center;
     color: gray;
+    font-size: 30px;
     text-transform: uppercase;
   }
   .top-text {
