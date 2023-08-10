@@ -199,3 +199,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: 992px) {
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+}
