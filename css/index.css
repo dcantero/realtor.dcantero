@@ -1,0 +1,346 @@
+.tagline {
+  display: flex;
+  justify-content: center;
+  font-size: 35pt;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 85%;
+  margin: 0px auto;
+}
+
+.subtext {
+  display: flex;
+  justify-content: center;
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: 17pt;
+  text-transform: uppercase;
+
+  margin: 10px;
+}
+
+.top-text {
+  margin-top: 70px;
+}
+
+.bottom-text {
+  margin: 10px auto;
+  width: max-content;
+  margin-bottom: 60px;
+  animation: delay-typewriter 1s ease forwards;
+}
+
+.bottom-text::before,
+.bottom-text::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-text::before {
+  background: #121212;
+  animation: typewriter 2s steps(10) 1s forwards;
+}
+
+.bottom-text::after {
+  width: 2px;
+  background: white;
+  animation: typewriter 2s steps(10) 1s forwards, blink 650ms steps(10) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+button {
+  text-decoration: none;
+}
+
+.separator {
+  display: flex;
+  width: 150px;
+  height: 2px;
+  background: var(--jet);
+  margin: 20px auto;
+}
+
+.resource-container {
+  display: flex;
+  justify-content: center;
+}
+
+.resource-title {
+  text-transform: capitalize;
+}
+
+.separator-2 {
+  width: 40px;
+  height: 2px;
+  background-color: var(--jet);
+  margin: 8px 0px;
+}
+
+.resource-block {
+  display: flex;
+  height: 200px;
+  width: 500px;
+  background-color: var(--eerie-black-2);
+  margin: 50px;
+  border-radius: 20px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  padding-right: 15px;
+}
+.glyph-container {
+  margin: auto 10px;
+  padding: 0px 15px;
+}
+
+.glyphs {
+  width: 70px;
+}
+
+.content-container {
+  margin: auto 10px;
+}
+
+.resource-desc {
+  color: rgb(133, 130, 130);
+}
+.resource-buttons {
+  margin: 20px 0px 0px 0px;
+}
+
+.download-btn {
+  background-color: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 5px;
+  box-shadow: var(--shadow-1);
+  margin-right: 15px;
+  padding: 8px 12px;
+}
+
+.other-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+
+.cta-resource {
+  background-color: var(--eerie-black-2);
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.cta-resource:hover {
+  color: grey;
+}
+
+.about-me {
+  margin: 40px auto 0px auto;
+}
+
+.about-me .about-me-text {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px 0px 0px;
+}
+.about-me h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.separator-3 {
+  width: 150px;
+  height: 2px;
+  background: var(--jet);
+  margin: 20px auto;
+}
+
+.about-me p {
+  width: 600px;
+}
+
+.headshot {
+  margin: 15px 0px;
+  color: hsl(228, 100%, 70%);
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 40px;
+  width: 80px;
+}
+
+.contact-btn span {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Map */
+/* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+.gmnoprint:last-child {
+  display: none !important;
+}
+
+.gmnoprint:nth-last-child(3),
+.gmnoprint:nth-last-child(2),
+.gmnoprint:nth-last-child(1) {
+  display: none !important;
+}
+
+.service-area-container {
+  margin: 40px auto;
+}
+
+.service-area-container h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.service-area-container h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.service-area-container h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.asterisk {
+  display: flex;
+  justify-content: center;
+}
+
+.asterisk p {
+  font-size: 13px;
+  font-family: sofia-pro, sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.separator-4 {
+  width: 150px;
+  height: 2px;
+  background: var(--jet);
+  margin: 0px auto 25px auto;
+}
+
+@media (max-width: 768px) {
+  .subtext {
+    font-size: 15px;
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+    color: gray;
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+  .top-text {
+    margin-top: 40px;
+  }
+  .bottom-text {
+    margin-top: 20px;
+  }
+
+  .resource-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resource-block {
+    width: 85%;
+    margin: 20px auto;
+    height: fit-content;
+    padding: 8px;
+  }
+  .glyph-container {
+    margin: auto 0px;
+  }
+  .glyphs {
+    width: 50px;
+  }
+
+  .content-container {
+    padding: 15px 10px 15px 10px;
+    margin: 0px;
+  }
+
+  #map {
+    width: 85%;
+  }
+  .service-area-container h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 17px;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+}
+
+.contact-cta {
+  margin-bottom: 50px;
+}
+
+.contact-cta span {
+  transition: 0.3s ease;
+}
+
+.contact-cta span:hover {
+  color: grey;
+}
+
+#cover-image {
+  position: relative;
+  background-image: url(/images/cover-image-2.png);
+  background-size: cover;
+  background-position: top;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  z-index: 1;
+}
+
+.cta-container {
+  margin-bottom: 70px;
+}

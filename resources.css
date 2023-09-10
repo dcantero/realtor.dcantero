@@ -140,14 +140,12 @@
     background-color: var(--eerie-black-2);
     box-shadow: var(--shadow-1);
   }
-
   .separator {
     width: 75px;
     height: 2px;
     margin: 0px auto 10px 0px;
     background-color: var(--jet);
   }
-
   .left-side {
     height: 150px;
   }

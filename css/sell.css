@@ -1,0 +1,8 @@
+#header-image {
+  position: relative;
+  background-image: url(/images/header-images/sell-cover.jpeg);
+  background-size: cover;
+}
+.header-content {
+  height: 100%;
+}
