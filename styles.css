@@ -65,12 +65,17 @@
   --transition-2: 0.5s ease-in-out;
 }
 
+html {
+  font-size: 16px;
+}
+
 * {
   padding: 0;
   margin: 0;
   color: rgb(221, 221, 221);
   font-family: "Europa", sans-serif;
 }
+
 body {
   background: var(--smoky-black);
 }
@@ -215,8 +220,8 @@ transition: 0.3s;
   align-items: center;
 }
 
-.chef-hat {
-  width: 300px;
+.premiere-logo {
+  width: 400px;
 }
 .footer-logo {
   margin-right: 10px;
@@ -267,6 +272,12 @@ transition: 0.3s;
 }
 
 @media (max-width: 768px) {
+  .section-1 {
+    margin: auto;
+  }
+  .footer-desc p {
+    text-align: center;
+  }
   .footer-main {
     flex-direction: column;
     align-items: center;
@@ -299,6 +310,9 @@ transition: 0.3s;
 
   .titles {
     margin-bottom: 0px;
+  }
+  .premiere-logo {
+    width: 300px;
   }
 }
 

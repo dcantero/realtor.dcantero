@@ -1,8 +1,61 @@
+#header-content {
+  padding: 40px;
+  margin: 20px 0px 20px 20px;
+}
+
+#header-content h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.page-description {
+  max-width: 30%;
+}
+
+.title-cta {
+  margin-top: 4cqb;
+}
+
 #header-image {
   position: relative;
-  background-image: url(/images/header-images/sell-cover.jpeg);
+  background-image: url(/images/header-images/contemporary-homes.png);
   background-size: cover;
 }
-.header-content {
-  height: 100%;
+
+.article-content {
+  width: 50%;
+  margin: auto;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.table-container {
+  margin: 20px auto 40px auto;
+}
+
+table {
+  background-color: gray;
+}
+tr {
+  background-color: #121212;
+}
+
+th {
+  font-size: 20px;
+  padding: 3px 7px 1px 7px;
+}
+td {
+  font-size: 18px;
+  padding: 3px 50px 1px 7px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

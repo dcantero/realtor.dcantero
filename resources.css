@@ -74,6 +74,9 @@
   color: rgb(133, 130, 130);
 }
 
+.read-time {
+  padding-right: 20px;
+}
 .blog-title {
   margin: 10px auto 5px;
   text-transform: capitalize;

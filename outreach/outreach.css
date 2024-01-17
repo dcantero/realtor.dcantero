@@ -1,0 +1,53 @@
+h1 {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.cta-container {
+  flex-wrap: wrap;
+}
+.cta {
+  margin: 20px;
+}
+
+#reports-title {
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+#reports-note {
+  margin-bottom: 20px;
+}
+.report-links-container {
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+}
+.report-links {
+  margin: 2px;
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  width: max-content;
+  justify-content: center;
+}
+
+#map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 80%;
+  margin: 30px auto 90px auto;
+  border-radius: 30px;
+  border: 1px solid var(--jet);
+  box-shadow: var(--shadow-1);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    max-width: 85%;
+  }
+}

@@ -6,7 +6,7 @@ function downloadVCard() {
       "FN:Daniel Cantero\n" +
       "ORG:EXP\n" +
       "TEL;TYPE=CELL:(609) 963-5311\n" +
-      "EMAIL:exp@dcantero.com\n" +
+      "EMAIL:dan@dcantero.com\n" +
       "URL:https://realtor.dcantero.com\n" +
       "X-SOCIALPROFILE;type=facebook:https://www.facebook.com/dcanterorealtor\n" +
       "X-SOCIALPROFILE;type=linkedin:https://www.linkedin.com/in/daniel-c-755300180/\n" + // Adding LinkedIn URL

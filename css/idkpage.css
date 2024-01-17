@@ -3,6 +3,15 @@
   margin: 20px 0px 20px 20px;
 }
 
+#header-content h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
 .page-description {
   max-width: 30%;
+}
+
+.title-cta {
+  margin-top: 4cqb;
 }
