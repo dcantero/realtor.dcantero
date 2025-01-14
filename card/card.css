@@ -136,3 +136,50 @@ a {
     margin: 10px;
   }
 }
+/* Add this new class for container */
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 80px auto;
+  width: 330px;
+}
+
+/* Update your cta-container class */
+.cta-container {
+  width: 100%;
+  text-align: center;
+}
+
+/* Style for both buttons */
+.contact-btn {
+  width: 200px; /* Match the width of the Apple Wallet button */
+  padding: 12px 24px;
+  background-color: #161825;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Update Apple Wallet button styles */
+.add-to-wallet-button {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.add-to-wallet-button img {
+  transition: transform 0.2s ease;
+  width: 200px;
+  height: auto;
+}
+
+.add-to-wallet-button img:hover {
+  transform: scale(1.05);
+}
