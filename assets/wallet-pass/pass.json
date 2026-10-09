@@ -1,0 +1,84 @@
+{
+    "formatVersion": 1,
+    "passTypeIdentifier": "pass.com.dcantero.card",
+    "serialNumber": "ABCD123456789",
+    "teamIdentifier": "D79ZA5G4TC",
+    "organizationName": "",
+    "description": "Business Card for Daniel Cantero",
+    "logoText": "",
+    "backgroundColor": "rgb(28, 28, 28)",
+    "foregroundColor": "rgb(255, 255, 255)",
+    "labelColor": "rgb(80, 105, 255)",
+    
+    "barcode": {
+        "message": "https://realtor.dcantero.com/card",
+        "format": "PKBarcodeFormatQR",
+        "messageEncoding": "iso-8859-1"
+    },
+    
+    "generic": {
+        "primaryFields": [
+            {
+                "key": "name",
+                "label": "NAME",
+                "value": "Daniel Cantero",
+                "textAlignment": "PKTextAlignmentLeft"
+            }
+        ],
+        
+        "secondaryFields": [
+            {
+                "key": "phone",
+                "label": "PHONE",
+                "value": "(609)963-5311"
+            },
+            {
+                "key": "email",
+                "label": "EMAIL",
+                "value": "dan@dcantero.com"
+            }
+        ],
+        
+        "auxiliaryFields": [
+            {
+                "key": "brokerage",
+                "label": "BROKER",
+                "value": "Real Broker LLC"
+            },
+            {
+                "key": "license",
+                "label": "LICENSE#",
+                "value": "2322392"
+            }
+        ],
+        
+        "backFields": [
+            {
+                "key": "about",
+                "label": "About Me",
+                "value": "South Jersey Real Estate Professional specializing in residential properties. Hable Español."
+            },
+            {
+                "key": "team",
+                "label": "Team",
+                "value": "PREMIERE"
+            },
+            {
+                "key": "social",
+                "label": "Connect with me!",
+                "value": "Instagram: @dcantero.realtor\nFacebook: @dcanterorealtor"
+            },
+            {
+                "key": "areas",
+                "label": "Areas Served",
+                "value": "• Atlantic County\n• Camden County\n• Gloucester County\n• Burlington County"
+            },
+            {
+                "key": "website",
+                "label": "Website",
+                "value": "https://realtor.dcantero.com"
+            }
+        ]
+    }
+    
+}
