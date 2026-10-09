@@ -13,6 +13,8 @@ npm run dev          # http://localhost:3000 with HMR
 
 All site details (name, phone, email, license, brokerage, social links, external tool URLs, Typekit kits, Maps key) come from environment variables. Nothing identifying is hardcoded. See `.env.example` for the full list; `app/lib/config.server.ts` reads and validates them at startup and the public subset reaches the browser through the root route loader (`useSite()` in components).
 
+
+Environment variables are read once at startup. After editing `.env`, restart the dev server (Ctrl+C, then `npm run dev`); hot reload picks up code changes but not env changes.
 ## Scripts
 
 | Script              | What it does                                           |
