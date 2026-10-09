@@ -59,7 +59,7 @@ export const publicConfig: SiteConfig = {
     homeValuation: env("HOME_VALUATION_URL"),
     builtWith: {
       name: env("BUILT_WITH_NAME", "Realtero"),
-      url: env("BUILT_WITH_URL", "https://realtero.com"),
+      url: env("BUILT_WITH_URL", "https://realtero.app"),
     },
   },
 };
