@@ -70,9 +70,34 @@ The `/blog` and `/blog/:slug` routes need no changes. A post `body` can be `{ ki
 
 ## Deploying
 
-The `Dockerfile` builds a production image that runs on Railway, Render, Fly.io, or any Docker host. Set the variables from `.env.example` in the host's dashboard. The app listens on `PORT` (default 3000).
+The site runs on the Hetzner VPS as a pm2 process behind nginx, like the other apps there.
 
-When the site moves off GitHub Pages, point the `realtor.dcantero.com` DNS record at the new host and keep HTTPS enabled: the wallet pass QR code and the pass download link both use that domain.
+**One-time setup** (already done):
+
+```bash
+cd /var/www/realtor.dcantero
+nvm install 22
+cp .env.example .env          # set PORT=3005, SITE_URL=https://realtor.dcantero.com, GOOGLE_MAPS_API_KEY
+npm ci && npm run build
+REALTOR_NODE_BIN="$(nvm which 22)" pm2 start ecosystem.config.cjs
+pm2 save
+```
+
+nginx proxies `realtor.dcantero.com` to `localhost:3005` (config in `/etc/nginx/sites-available/realtor.dcantero.com`); certbot manages the certificate.
+
+**Each deploy:**
+
+```bash
+cd /var/www/realtor.dcantero
+git pull
+npm ci
+npm run build
+pm2 restart realtor-dcantero
+```
+
+Environment variables are read at process start, so `.env` edits also need `pm2 restart realtor-dcantero`.
+
+The `Dockerfile` is kept for portability but is not used on the VPS.
 
 Restrict the Google Maps key to HTTP referrers (`realtor.dcantero.com/*`, plus `localhost:3000/*` for development) in Google Cloud Console; the key is necessarily visible in the browser.
 
