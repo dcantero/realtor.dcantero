@@ -35,6 +35,8 @@ export interface SiteLinks {
   listings: string;
   /** External "what's my home worth" valuation page. */
   homeValuation: string;
+  /** "Built with" credit shown in the footer. */
+  builtWith: { name: string; url: string };
 }
 
 export interface SiteConfig {

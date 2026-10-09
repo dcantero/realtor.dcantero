@@ -14,6 +14,10 @@
   --color-card-accent: #5264ae;
   --color-card-chip: #10121b;
 
+  /* "Built with Realtero" credit in the footer */
+  --color-realtero: #19dd7b;
+  --color-realtero-dim: #0f9a55;
+
   /* Adobe Fonts (Typekit) families, loaded in root.tsx */
   --font-sans: "europa", sans-serif;
   --font-body: "sofia-pro", sans-serif;

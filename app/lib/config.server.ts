@@ -57,6 +57,10 @@ export const publicConfig: SiteConfig = {
   links: {
     listings: env("LISTINGS_URL"),
     homeValuation: env("HOME_VALUATION_URL"),
+    builtWith: {
+      name: env("BUILT_WITH_NAME", "Realtero"),
+      url: env("BUILT_WITH_URL", "https://realtero.com"),
+    },
   },
 };
 

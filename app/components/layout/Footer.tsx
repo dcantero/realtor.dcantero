@@ -42,8 +42,9 @@ export function Footer() {
   ];
 
   return (
-    <footer className="mt-5 flex justify-between pb-6 max-md:flex-col max-md:items-center">
-      <div className="basis-[30%] ml-[30px] max-md:mx-auto max-md:mb-[45px] max-md:text-center">
+    <footer className="mt-5 pb-6">
+      <div className="flex justify-between max-md:flex-col max-md:items-center">
+        <div className="basis-[30%] ml-[30px] max-md:mx-auto max-md:mb-[45px] max-md:text-center">
         {/* The brokerage logo is black on transparent; it for the dark theme. */}
         <img
           src={contact.brokerageLogoPath}
@@ -60,6 +61,17 @@ export function Footer() {
       </div>
       <FooterColumn title="Helpful Links" links={helpful} />
       <FooterColumn title="Other Links" links={other} />
+      </div>
+      <p className="mt-6 text-center text-xs uppercase tracking-[3px]">
+        <a
+          href={site.links.builtWith.url}
+          target="_blank"
+          rel="noreferrer"
+          className="text-realtero-dim transition-colors duration-300 hover:text-realtero"
+        >
+          Built with <span className="font-bold text-realtero">{site.links.builtWith.name}</span>
+        </a>
+      </p>
     </footer>
   );
 }
