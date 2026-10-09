@@ -27,6 +27,7 @@ function FooterColumn({ title, links }: { title: string; links: FooterLink[] }) 
 
 export function Footer() {
   const site = useSite();
+  const { contact } = site;
 
   const helpful: FooterLink[] = [
     { label: "Contact", to: "/contact" },
@@ -43,13 +44,19 @@ export function Footer() {
   return (
     <footer className="mt-5 flex justify-between pb-6 max-md:flex-col max-md:items-center">
       <div className="basis-[30%] ml-[30px] max-md:mx-auto max-md:mb-[45px] max-md:text-center">
+        {/* The brokerage logo is black on transparent; invert it for the dark theme. */}
         <img
-          src={site.contact.brokerageLogoPath}
-          alt={`${site.contact.brokerage} logo`}
-          className="w-[400px] max-w-full max-md:w-[300px]"
+          src={contact.brokerageLogoPath}
+          alt={`${contact.brokerage} logo`}
+          className="w-[180px] max-w-full invert max-md:mx-auto"
         />
         <p className="mt-5 text-link">Add me on my socials to keep up with updates!</p>
         <SocialLinks variant="footer" className="max-md:flex max-md:justify-center" />
+        <p className="mt-2 text-sm text-link">
+          {contact.fullName}, {contact.title}® · {contact.brokerage}
+          <br />
+          NJ Real Estate License #{contact.license}
+        </p>
       </div>
       <FooterColumn title="Helpful Links" links={helpful} />
       <FooterColumn title="Other Links" links={other} />

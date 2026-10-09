@@ -41,7 +41,7 @@ export default function Home() {
           <Cta href={site.links.listings} external>
             Search Homes
           </Cta>
-          <Cta to="/sell">Sell Home</Cta>
+          <Cta to="/under-development">Sell Home</Cta>
         </div>
         <Separator />
       </section>
@@ -52,7 +52,7 @@ export default function Home() {
           glyph={assets.glyphs.sell}
           title="How I can help you sell"
           description="Don't understand the process of selling your home? It can be a lot easier than you think."
-          cta={{ label: "Help Me!", to: "/sell" }}
+          cta={{ label: "Help Me!", to: "/under-development" }}
         />
         <ResourceBlock
           glyph={assets.glyphs.buy}
@@ -66,7 +66,7 @@ export default function Home() {
       <section id="service-area" className="my-10 scroll-mt-6">
         <h3 className={`${sectionTitle} flex justify-center`}>Counties I service</h3>
         <br />
-        <Separator className="mt-0 mb-[25px]" />
+        <Separator className="mx-auto mt-0 mb-[25px] w-[150px]" />
         <h4 className="flex justify-center font-body text-xl font-light max-md:px-4 max-md:text-center max-md:text-[17px]">
           {countyList}
         </h4>

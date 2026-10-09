@@ -27,9 +27,7 @@ export interface SiteSocials {
   instagram: string;
   /** Instagram handle without the @, used for display. */
   instagramHandle: string;
-  behance: string;
   linkedin: string;
-  github: string;
 }
 
 export interface SiteLinks {

@@ -44,7 +44,7 @@ export function Header() {
     { label: "Find a Home", href: site.links.listings },
   ];
   const right: NavItem[] = [
-    { label: "Sell", to: "/sell" },
+    { label: "Sell", to: "/under-development" },
     { label: "Testimonials", to: "/under-development" },
     { label: "Partners", to: "/under-development" },
   ];
@@ -97,7 +97,7 @@ export function Header() {
             open ? "max-h-96 opacity-100" : "max-h-0 opacity-0",
           )}
         >
-          <Separator className="mx-0 my-4" />
+          <Separator className="mx-0 my-4 w-[150px]" />
           <ul className="flex flex-col gap-2.5 pb-5">
             {[...left, ...right].map((item) => (
               <li key={item.label}>

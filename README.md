@@ -47,7 +47,7 @@ assets/wallet-pass/     Source files for the .pkpass (not served)
 | `/card`                                   | Digital business card (QR target) |
 | `/contact`                                | Contact                           |
 | `/blog`, `/blog/:slug`                    | Resources / articles              |
-| `/sell`                                   | Selling guide                     |
+| `/sell`                                   | Redirects to `/under-development` (draft in `app/drafts/SellPage.tsx`) |
 | `/outreach/camden-county-market-report`   | Camden County market report       |
 | `/privacy-policy`, `/terms-of-use`        | Legal                             |
 | `/under-development`                      | Placeholder                       |
@@ -76,7 +76,7 @@ Restrict the Google Maps key to HTTP referrers (`realtor.dcantero.com/*`, plus `
 
 ## Known TODOs
 
-- `app/routes/sell.tsx`: body copy is placeholder lorem ipsum.
+- `app/drafts/SellPage.tsx`: selling guide draft, body is placeholder lorem ipsum; `/sell` redirects to the under-development page until it is written.
 - `app/routes/privacy-policy.tsx`: the original policy ended mid-sentence; the Usage Data paragraph was completed with standard wording and should be reviewed.
 - `app/content/market-reports.ts`: Sicklerville has no report URL (the old link pointed at the Blackwood PDF).
 - Testimonials, Partners, and Careers still link to the under-development page.

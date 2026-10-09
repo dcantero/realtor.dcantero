@@ -1,5 +1,5 @@
 import type { IconType } from "react-icons";
-import { FaBehance, FaFacebookF, FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 import { cn } from "~/lib/cn";
 import { useSite } from "~/lib/use-site";
@@ -17,9 +17,7 @@ export function SocialLinks({ variant, className }: { variant: Variant; classNam
   const items: Array<{ href: string; label: string; Icon: IconType }> = [
     { href: socials.facebook, label: "Facebook", Icon: FaFacebookF },
     { href: socials.instagram, label: "Instagram", Icon: FaInstagram },
-    { href: socials.behance, label: "Behance", Icon: FaBehance },
     { href: socials.linkedin, label: "LinkedIn", Icon: FaLinkedinIn },
-    { href: socials.github, label: "GitHub", Icon: FaGithub },
   ];
 
   return (

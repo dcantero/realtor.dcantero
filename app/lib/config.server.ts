@@ -44,7 +44,7 @@ export const publicConfig: SiteConfig = {
     brokerage: env("BROKERAGE_NAME"),
     brokerageLogoPath: env(
       "BROKERAGE_LOGO_PATH",
-      "/images/Logos/New-Jersey-Premiere-Group-Real-Broker-Logo.png",
+      "/images/Logos/Real-Broker-Logo-Black.png",
     ),
     headshotPath: env("CONTACT_HEADSHOT_PATH", "/images/headshot-dcantero.png"),
   },
@@ -52,9 +52,7 @@ export const publicConfig: SiteConfig = {
     facebook: env("SOCIAL_FACEBOOK_URL"),
     instagram,
     instagramHandle: new URL(instagram).pathname.replace(/\//g, ""),
-    behance: env("SOCIAL_BEHANCE_URL"),
     linkedin: env("SOCIAL_LINKEDIN_URL"),
-    github: env("SOCIAL_GITHUB_URL"),
   },
   links: {
     listings: env("LISTINGS_URL"),
