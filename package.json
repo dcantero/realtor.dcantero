@@ -6,6 +6,10 @@
     "node": ">=22.12"
   },
   "scripts": {
+    "check-node": "node scripts/check-node.mjs",
+    "predev": "npm run -s check-node",
+    "prestart": "npm run -s check-node",
+    "prebuild": "npm run -s check-node",
     "dev": "NODE_ENV=development node --env-file-if-exists=.env --conditions development server.js",
     "build": "react-router build",
     "start": "NODE_ENV=production node --env-file-if-exists=.env server.js",
