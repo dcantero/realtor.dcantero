@@ -44,11 +44,11 @@ export function Footer() {
   return (
     <footer className="mt-5 flex justify-between pb-6 max-md:flex-col max-md:items-center">
       <div className="basis-[30%] ml-[30px] max-md:mx-auto max-md:mb-[45px] max-md:text-center">
-        {/* The brokerage logo is black on transparent; invert it for the dark theme. */}
+        {/* The brokerage logo is black on transparent; it for the dark theme. */}
         <img
           src={contact.brokerageLogoPath}
           alt={`${contact.brokerage} logo`}
-          className="w-[180px] max-w-full invert max-md:mx-auto"
+          className="w-[180px] max-w-full max-md:mx-auto"
         />
         <p className="mt-5 text-link">Add me on my socials to keep up with updates!</p>
         <SocialLinks variant="footer" className="max-md:flex max-md:justify-center" />

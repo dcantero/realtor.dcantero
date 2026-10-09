@@ -44,7 +44,7 @@ export const publicConfig: SiteConfig = {
     brokerage: env("BROKERAGE_NAME"),
     brokerageLogoPath: env(
       "BROKERAGE_LOGO_PATH",
-      "/images/Logos/Real-Broker-Logo-Black.png",
+      "/images/Logos/real-logo.svg",
     ),
     headshotPath: env("CONTACT_HEADSHOT_PATH", "/images/headshot-dcantero.png"),
   },

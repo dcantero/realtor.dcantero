@@ -49,7 +49,7 @@ export function BusinessCard() {
         <img
           src={contact.brokerageLogoPath}
           alt={`${contact.brokerage} logo`}
-          className="mx-auto w-[120px] invert"
+          className="mx-auto w-[120px]"
         />
       </div>
     </div>
