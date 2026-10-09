@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  /* Dark palette carried over from the original styles.css */
+  --color-page: #121212;
+  --color-surface: hsl(240 2% 12%);
+  --color-line: hsl(0 0% 22%);
+  --color-ink: rgb(221 221 221);
+  --color-muted: rgb(133 130 130);
+  --color-brand: hsl(228 100% 70%);
+  --color-link: rgb(125 142 179);
+  --color-icon: rgb(117 131 162);
+  --color-card: #161825;
+  --color-card-accent: #5264ae;
+  --color-card-chip: #10121b;
+
+  /* Adobe Fonts (Typekit) families, loaded in root.tsx */
+  --font-sans: "europa", sans-serif;
+  --font-body: "sofia-pro", sans-serif;
+
+  --shadow-card: -4px 8px 24px hsl(0 0% 0% / 0.25);
+
+  /* The desktop nav collapses below 966px; nav spacing tightens below 1300px */
+  --breakpoint-nav: 966px;
+  --breakpoint-wide: 1300px;
+}
+
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-page font-sans text-ink antialiased;
+  }
+  p {
+    @apply font-body font-light;
+  }
+}
+
+@layer components {
+  /* CSS-only typewriter reveal, ported from css/index.css */
+  .typewriter {
+    @apply relative w-max;
+  }
+  .typewriter::before,
+  .typewriter::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+  .typewriter::before {
+    background: var(--color-page);
+    animation: typewriter 2s steps(10) 1s forwards;
+  }
+  .typewriter::after {
+    width: 2px;
+    background: white;
+    animation:
+      typewriter 2s steps(10) 1s forwards,
+      blink 650ms steps(10) infinite;
+  }
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  /* Uppercase, letter-spaced nav / label text used across the site */
+  .label-text {
+    @apply uppercase tracking-[3px];
+  }
+}

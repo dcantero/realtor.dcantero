@@ -1,0 +1,26 @@
+/** Dark Google Maps style shared by every map on the site (was duplicated in js/map.js and js/camden-county.js). */
+export const darkMapStyle: google.maps.MapTypeStyle[] = [
+  { elementType: "geometry", stylers: [{ color: "#949494" }] },
+  { elementType: "geometry.fill", stylers: [{ color: "#171717" }] },
+  { featureType: "administrative", elementType: "geometry.fill", stylers: [{ color: "#121212" }] },
+  {
+    featureType: "administrative.locality",
+    elementType: "labels.text.fill",
+    stylers: [{ color: "#3e414f" }, { weight: 8 }],
+  },
+  { featureType: "administrative.locality", elementType: "labels.text.stroke", stylers: [{ visibility: "off" }] },
+  { featureType: "administrative.neighborhood", elementType: "labels", stylers: [{ visibility: "off" }] },
+  { featureType: "landscape.natural", elementType: "geometry", stylers: [{ color: "#242824" }] },
+  { featureType: "landscape.natural.landcover", stylers: [{ color: "#121212" }] },
+  { featureType: "poi.business", stylers: [{ visibility: "off" }] },
+  { featureType: "poi.park", elementType: "labels.text", stylers: [{ visibility: "off" }] },
+  { featureType: "road", elementType: "labels", stylers: [{ visibility: "off" }] },
+  { featureType: "road.arterial", stylers: [{ visibility: "off" }] },
+  { featureType: "road.arterial", elementType: "labels", stylers: [{ visibility: "off" }] },
+  { featureType: "road.highway", elementType: "geometry", stylers: [{ color: "#1a1a1a" }, { saturation: -5 }] },
+  { featureType: "road.highway", elementType: "labels", stylers: [{ visibility: "off" }] },
+  { featureType: "road.local", stylers: [{ visibility: "off" }, { color: "#474747" }] },
+  { featureType: "transit", stylers: [{ color: "#121212" }, { visibility: "off" }] },
+  { featureType: "water", stylers: [{ color: "#1e202f" }] },
+  { featureType: "water", elementType: "geometry.fill", stylers: [{ color: "#181d25" }] },
+];

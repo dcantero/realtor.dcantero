@@ -1,0 +1,9 @@
+.git
+.react-router
+build
+node_modules
+.env
+.env.*
+!.env.example
+assets
+README.md

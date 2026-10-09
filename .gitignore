@@ -12,3 +12,6 @@ build/
 .DS_Store
 .vscode/
 *.log
+
+# TypeScript incremental build info
+*.tsbuildinfo
